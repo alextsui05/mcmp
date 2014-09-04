@@ -21,6 +21,8 @@ $(document).ready(function()
         <th>Metric Computed</th>
         <th>Initial Map Computed</th>
         <th>Final Map Computed</th>
+        <th>Harmonic Energy</th>
+        <th>Elastic Energy</th>
     </tr>
 </thead>
 {% for subject in subjects %}
@@ -48,6 +50,8 @@ $(document).ready(function()
         No
         {% endif %}
         </td>
+        <td>{{ subject.state.harmonic_energy }}</td>
+        <td>{{ subject.state.elastic_energy }}</td>
     </tr>
 {% endfor %}
 </table>
